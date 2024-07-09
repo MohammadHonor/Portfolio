@@ -31,7 +31,7 @@ const Contact = () => {
 
  function setDetails(e){
   e.preventDefault();
-  axios.post("http://localhost:8000/contact", {
+  axios.post("https://portfolio-ebhc.onrender.com/contact", {
     name:contact.name,
     email:contact.email,
     massage:contact.massage
