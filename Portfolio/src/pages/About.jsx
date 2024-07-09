@@ -14,7 +14,7 @@ const About = () => {
 
     axios({
       method:'get',
-      url:'http://localhost:8000',
+      url:'https://portfolio-ebhc.onrender.com',
       responseType:"blob"
     }).then((res)=>FileDownload(res.data,"resume.pdf"))
 
