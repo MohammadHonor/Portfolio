@@ -63,7 +63,7 @@ const About = () => {
         >:
         </span>
         <span
-        >24
+        >23
         </span>
         <span
         >Freelance
