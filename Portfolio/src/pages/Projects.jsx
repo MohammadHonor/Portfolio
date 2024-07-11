@@ -7,7 +7,7 @@ const Projects = () => {
 
       <div className='grid gap-12 grid-cols-2 items-center justify-items-center '>
         <div className=' gap-2'>
-          <img src="./src/assets/porfolio.webp"
+          <img src="./src/assets/porfolio.jpg"
           className='h-48 w-48'
           alt="" />
           <p>Portfolio</p>

@@ -33,7 +33,7 @@ connectDB()
 
 app.get("/",(req,res)=>{
 
-    res.download("./public/temp/resume2.pdf");
+    res.download("./public/temp/msali-resume.pdf");
 
 })
 
