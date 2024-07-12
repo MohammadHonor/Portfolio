@@ -2,14 +2,15 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <div className='p-10 pt-20 h-screen border-t border-green-500 w-screen bg-slate-900 '>
+    <div className='p-10 pt-20 h-auto border-t border-green-500 w-screen bg-slate-900 '>
       <h1
         className='text-2xl font-bold  '
       >Education</h1>
       <div
-        className='flex justify-center items-center '
+        className='flex flex-col md:flex md:flex-row md:gap-4 justify-center items-center '
       >
-          <span className='text-2xl'>Currently Enrolled in B.tech Course</span>
+        <span className='text-2xl'>Currently Enrolled in B.tech Course</span>
+        <div className='flex  justify-center items-center'>
         <div className=' w-20 pt-10 pb-10 flex flex-col justify-center items-center'>
           <span className='relative bg-green-500 w-4 h-4 p-1 rounded-full text-green-500'></span>
           <span className='relative bottom-1 bg-green-500 h-32 p-1  text-green-500'></span>
@@ -17,14 +18,13 @@ const Education = () => {
           <span className='relative bottom-3 bg-green-500  h-48 p-1  text-green-500'></span>
           <span className='relative bottom-4 bg-green-500 w-4 h-4 p-1 rounded-full text-green-500'></span>
           <span className='relative bottom-5 bg-green-500  h-32 p-1  text-green-500'></span>
-
         </div>
        
 
-        <div className='flex  flex-col gap-4'>
-          <ul className='flex flex-col gap-1'>
+        <div className='flex  flex-col gap-4 '>
+          <ul className='flex flex-col gap-1 '>
             <li>2021-2025</li>
-            <li className='flex justify-between items-center'>
+            <li className=' flex justify-between items-center'>
               <span className='text-2xl'>Engineering  -</span>
               <span>RD Engineering College</span>
             </li>
@@ -57,7 +57,7 @@ const Education = () => {
             <li>Padrouna,kushinagar,U.P</li>
           </ul>
         </div>
-
+        </div>
       </div>
 
 

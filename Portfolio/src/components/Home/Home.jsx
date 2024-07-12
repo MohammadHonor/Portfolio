@@ -8,13 +8,13 @@ import Skill from '../../pages/Skill'
 import NavBar from '../NavBar/NavBar'
 
 const Home = () => {
-    return (<>
+    return (<div className='sm:flex sm:flex-col sm:justify-center sm:items-center'>
         <About />
          <Education/>
         <Skill />
         <Projects />
         <Contact />
-    </>
+    </div>
     )
 }
 

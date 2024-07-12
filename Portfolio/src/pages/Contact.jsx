@@ -47,9 +47,9 @@ const Contact = () => {
 
   return (
   <div
-    className='bg-slate-900 p-10 pt-20 border-t border-green-500  '>
+    className=' overflow-y-auto bg-slate-900 p-10 pt-20 border-t border-green-500  w-screen '>
     <b className='text-2xl'>Contact</b>
-    <div className='flex gap-20 h-[500px] justify-center items-center'>
+    <div className='grid md:grid-cols-2 gap-20 min-h-screen  justify-center items-center'>
       <form onSubmit={setDetails} className='flex flex-col gap-2 justify-stretch '>
 
         <input
@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
 
         <div className='flex gap-4 text-6xl text-green-500'>
-          <FaGithubSquare />
+          <FaGithubSquare onClick={()=>href='https://github.com/MohammadHonor'} />
           <AiFillLinkedin />
           <FaInstagramSquare />
           <AiFillTwitterSquare />

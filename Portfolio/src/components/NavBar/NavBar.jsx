@@ -15,7 +15,7 @@ const NavBar = () => {
 
             </div>
             <ul
-                className={`flex  gap-6 items-center `} >
+                className={`hidden lg:flex gap-6 items-center  `} >
                 <li>
                     <NavLink
                         to="/" >Home</NavLink>
