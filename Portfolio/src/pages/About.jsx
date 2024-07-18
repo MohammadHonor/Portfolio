@@ -31,7 +31,7 @@ const About = () => {
       {/* <div className=' border-green-500 flex justify-center items-center
        bg-sky-500 shadow-lg
         shadow-cyan-700 '> */}
-        <img className="border-2 animate-trans-top sm:w-[200px] border-green-500 w-[300px] h-[300px] rounded-3xl bg-black" src="./IMG_20240412_064140.jpg" alt="hi..." />
+        <img className="border-2 animate-trans-top sm:w-[200px] border-green-500 w-[300px] h-[300px] rounded-3xl bg-black" src="./p.jpg" alt="hi..." />
       {/* </div> */}
     </div>
     <div className='flex flex-col pb-5'>
