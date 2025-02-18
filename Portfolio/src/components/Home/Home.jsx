@@ -8,7 +8,7 @@ import Skill from '../../pages/Skill'
 import NavBar from '../NavBar/NavBar'
 
 const Home = () => {
-    return (<div className='sm:flex sm:flex-col sm:justify-center sm:items-center'>
+    return (<div className='h-[100%]'>
         <About />
          <Education/>
         <Skill />

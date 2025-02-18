@@ -46,12 +46,10 @@ const Contact = () => {
 }
 
   return (
-  <div
-    className=' overflow-y-auto bg-slate-900 p-10 pt-20 border-t border-green-500  w-screen '>
-    <b className='text-2xl'>Contact</b>
-    <div className='grid md:grid-cols-2 gap-20 min-h-screen  justify-center items-center'>
-      <form onSubmit={setDetails} className='flex flex-col gap-2 justify-stretch '>
-
+  <div className='h-[100%] bg-slate-900 p-3 '>
+    <b className='text-xl sm:text-2xl'>Contact</b>
+    <div className='flex flex-col justify-evenly items-center mt-2 sm:flex-row '>
+      <form onSubmit={setDetails} className='flex flex-col gap-2 w-[90%] sm:w-[30%]'>
         <input
           type="text"
           name="name"
@@ -82,25 +80,30 @@ const Contact = () => {
         >Send</button>
       </form>
 
-      <div className='flex flex-col gap-6'>
-        <p className='text-2xl'>DON'T BE SHY</p>
+      <div className='flex flex-col gap-6  sm:[30%] p-10'>
+        <p className='text-xl sm:text-2xl'>DON'T BE SHY</p>
         <p>Feel free to reach out if you have any questions,<br />
           collaborations opportunities or just want to connect.<br /> I'm always open to new projects and discussion</p>
         <div className='flex gap-4  items-center'>
-          <GoMail className='text-6xl text-green-400' />
+                      <GoMail className='text-3xl text-green-400 sm:text-6xl cursor-pointer'
+                      />
           <span>Mail me <br />md.sharufali987@gmail.com</span>
         </div>
 
-        <div className='flex gap-4 text-6xl text-green-500'>
-          <FaGithubSquare onClick={()=>href='https://github.com/MohammadHonor'} />
-          <AiFillLinkedin />
-          <FaInstagramSquare />
-          <AiFillTwitterSquare />
+        <div className='flex gap-4 text-3xl text-green-500 sm:text-6xl '>
+            <FaGithubSquare onClick={() => window.open('https://github.com/MohammadHonor')}
+            className='cursor-pointer'/>
+            <AiFillLinkedin className='cursor-pointer'
+            onClick={()=>window.open("https://www.linkedin.com/in/msali-91322124b/")}/>
+            <FaInstagramSquare className='cursor-pointer'
+            onClick={()=>window.open("")}/>
+            <AiFillTwitterSquare className='cursor-pointer'
+            onClick={()=>window.open("https://x.com/home")}/>
         </div>
       </div>
     </div>
-    <hr className='border-green-500 ' />
-    <p className='text-center'>Portfolio made in 2024</p>
+    <hr className='border-green-500 bg-slate-900 sm:mt-48' />
+    <p className='text-center bg-slate-900'>Portfolio made in 2024</p>
   </div>
   )
 }
