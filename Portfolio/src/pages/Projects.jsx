@@ -5,23 +5,27 @@ const Projects = () => {
     <div className=' h-[100%] bg-slate-900 p-3 '>
       <b className='text-2xl'>Project</b>
 
-      <div className='flex flex-col gap-6 items-center justify-items-center sm:w-[360px] md:flex-row '>
+      <div className='flex flex-col gap-6 items-center justify-items-center sm:w-[360px] md:flex-row mt-4 '>
         <div className=' gap-2'>
-          <img src="./src/assets/porfolio.jpg"
+          <img src="./porfolio.jpg"
           className='h-48 w-48'
           alt="" />
           <p>Portfolio</p>
         </div>
         <div className='gap-2'>
-          <img src="./src/assets/voting-vector.jpg" 
+          <img src="./chatpdf.png" 
+          className='h-48 w-48'
+          alt="" />
+          <p>ChatPdf</p>
+        </div>
+        <div className='gap-2'>
+          <img src="./voting-vector.jpg" 
           className='h-48 w-48'
           alt="" />
           <p>voting system</p>
         </div>
 
-        <div className='flex flex-col gap-2'>
         
-        </div>
 
         <div className='flex flex-col  '>
           
