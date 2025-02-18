@@ -20,11 +20,11 @@ const About = () => {
     <div className='flex justify-between gap-1  '>
       <div className='flex flex-col gap-6'>
         <span>Welcome to my portfolio</span>
-        <span className='text-lg font-bold text-green-500 sm:text-3xl'> HELLO <br />I AM <br />MOHAMMAD SHARUF ALI</span>
+        <span className='text-lg font-bold text-white sm:text-3xl'> HELLO <br />I AM <br />MOHAMMAD SHARUF ALI</span>
         <span>Computer Science Engineer</span>
-        <span className='border w-40 items-center pl-7 p-2 rounded border-green-500'><NavLink to='/Contact'>CONTACT ME</NavLink></span>
+        <span className='border w-40 items-center pl-7 p-2 rounded border-blue-900'><NavLink to='/Contact'>CONTACT ME</NavLink></span>
       </div>
-        <img className="sm:h-[24rem] h-[16rem] w-[16rem] mr-[12rem] rounded-sm "
+        <img className="sm:h-[24rem] h-[16rem] w-[16rem] mr-[12rem] rounded-sm shadow-md shadow-white"
         src="./p.jpg" alt="hi..." />
     </div>
     {/* <div className='flex flex-col pb-5'>
@@ -64,7 +64,7 @@ const About = () => {
 
       <div className='flex flex-col gap-6 relative sm:right-48'>
         <p>Dive into my portfolio and explore me</p>
-        <div className=' p-2  border-green-500 border rounded-lg flex justify-evenly w-48 items-center'>
+        <div className=' p-2  border-blue-900 border rounded-lg flex justify-evenly w-48 items-center'>
           <button onClick={(e)=>{downloadPdf()}}>DOWNLOAD CV</button>
           <MdDownloadForOffline className='text-xl text-green-500' />
         </div>

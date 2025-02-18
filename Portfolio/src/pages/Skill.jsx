@@ -13,16 +13,36 @@ import { FaSquareGit } from "react-icons/fa6";
 
 
 function Skill() {
-  return (
-    <div className=' bg-slate-900 flex flex-col  p-3 h-[100%] '>
-      <b className='text-xl sm:text-3xl'>Skills</b>
-    <div className='gap-10 grid grid-cols-2 md:max-h-screen  md:max-[320px] md:grid-cols-3'>
-       <div className=' flex flex-col justify-center items-center'>
-      <GrReactjs className='text-3xl animate-trans-top sm:text-8xl'/>
-      <span>React</span>
-      </div>
 
-      <div className='flex flex-col justify-center items-center '>
+  const technology = [
+    { icon: <GrReactjs className=' animate-trans-top text-8xl' />, name: "React" },
+    { icon: <SiExpress className=' text-yellow-400 animate-trans-top text-8xl' />, name: "Express" },
+    { icon: <BiLogoMongodb  className=' animate-trans-top  text-8xl'/>, name: "Mongodb" },
+    { icon: <TbBrandJavascript  className=' text-green-600 animate-trans-top text-8xl'/>, name: "JavaScript" },
+    { icon: <IoLogoHtml5 className=' text-red-700 animate-trans-top text-8xl'/>, name: "Html" },
+    { icon: <SiTailwindcss  className=' text-blue-500 animate-trans-top text-8xl'/>, name: "Tailwind" },
+    { icon:<IoLogoCss3  className=' animate-trans-top text-8xl'/>, name: "Css" },
+    { icon: <FaJava  className=' animate-trans-top text-orange-300 text-8xl'/>, name: "Java" },
+    { icon: <FaPython  className=' animate-trans-to text-pink-600 text-8xl'/>, name: "Python" },
+    { icon: <FaGithub className=' animate-trans-top text-white text-8xl' />, name: "Github" },
+    { icon:  <FaSquareGit  className=' animate-trans-top text-green-600 text-8xl'/>, name: "git" },
+  ]
+  return (
+    <div className=' bg-slate-900 flex flex-col  p-3 '>
+      <b className='text-xl sm:text-3xl'>Skills</b>
+      <div className='grid grid-cols-1 sm:grid-cols-6 gap-4 sm:gap-4 overflow-x-hidden mt-10 p-3 '>
+        {
+          technology.map((tech,idx) => {
+            return (
+              <div className=' flex flex-col justify-center items-center shrink-0 border border-blue-900 rounded shadow-md shadow-white' key={idx}>
+                {tech.icon}
+                <span>{tech.name}</span>
+              </div>
+            
+            )
+          })
+        }
+      {/* <div className='flex flex-col justify-center items-center '>
       <SiExpress  className='text-3xl text-yellow-400 animate-trans-top sm:text-8xl'/>   
        <span>Express</span>
       </div>
@@ -51,10 +71,10 @@ function Skill() {
       </div>
 
       <div className='flex flex-col justify-center items-center'>
-      <FaJava  className='text-3xl animate-trans-top text-orange-300 sm:text-8xl'/>
       <span>Java</span>
       </div>
-      
+            <FaJava  className='text-3xl animate-trans-top text-orange-300 sm:text-8xl'/>
+
         <div className='flex flex-col justify-center items-center'>
       <FaPython  className='text-3xl animate-trans-top text-orange-300 sm:text-8xl'/>
       <span>Python</span>
@@ -67,7 +87,7 @@ function Skill() {
       <FaSquareGit  className='text-3xl animate-trans-top text-white sm:text-8xl'/>
       <span>Git</span>
       </div>
-      
+       */}
     </div>
     </div>
   )
